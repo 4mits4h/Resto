@@ -1,0 +1,29 @@
+<form class="form-inline my-2 my-lg-0">
+  <input
+    class="form-control mr-sm-2"
+    type="search"
+    name="search"
+    placeholder="Search"
+    aria-label="Search"
+  />
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+    Search
+  </button>
+  <table class="table table-striped">
+    <thead>
+      <tr *ngFor="let item of collection">
+        <th>{{ item.id }}</th>
+        <th>{{ item.name }}</th>
+        <th>{{ item.address }}</th>
+        <th>{{ item.email }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
